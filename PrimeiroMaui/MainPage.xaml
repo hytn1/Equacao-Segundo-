@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeiroMaui.MainPage"
+             BackgroundColor="#DAFFF4">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="mat.jpg"
+                HeightRequest="250"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label Text="Numero para A"
+                   FontSize="18"/>
+            <Entry x:Name="txt_n1"
+                   BackgroundColor="White"/>
+
+            <Label Text="Numero para B"
+                   FontSize="18"/>
+            <Entry x:Name="txt_n2"
+                   BackgroundColor="White"/>
+            
+            <Label Text="Numero para C"
+                   FontSize="18"/>
+            <Entry x:Name="txt_n3"
+                   BackgroundColor="White"/>
+
+
+            <Button Text="Calcular" Clicked="Button_Clicked"
+                    BackgroundColor="#FF9770"
+                    WidthRequest="500"
+                    HeightRequest="50"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
